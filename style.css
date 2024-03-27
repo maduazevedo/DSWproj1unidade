@@ -7,7 +7,7 @@ body {
 
 header {
   background-color: #216ed1;
-  color: #fff;
+  color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
   // text-align: center; /* Centraliza o texto dentro do cabeçalho */
 }
@@ -16,6 +16,7 @@ header {
   margin-left: 20%;
   margin-right: 20%;
   padding: 10px;
+  padding-left: 25px;
 }
 
 .logo-wrapper {
@@ -27,12 +28,12 @@ header {
   width: 75px;
   height: auto;
   margin-right: 10px; /* Adiciona margem à direita da logo */
-  margin-left: 20px; /* Adiciona margem à direita da logo */
+  margin-left: 10px; /* Adiciona margem à direita da logo */
   margin-top: 10px; /* Adiciona margem ao topo da logo */
 }
 
 h1 {
-  margin: 0 10px; /* Adiciona margem de 10px nas laterais do título */
+  margin: 10px; /* Adiciona margem de 10px nas laterais do título */
 }
 
 nav {
