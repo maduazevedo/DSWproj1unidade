@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #216ed1;
+  color: #fff;
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  // text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.logo-topo {
+  width: 75px;
+  height: auto;
+  margin-right: 10px; /* Adiciona margem à direita da logo */
+  margin-left: 20px; /* Adiciona margem à direita da logo */
+  margin-top: 10px; /* Adiciona margem ao topo da logo */
+}
+
+h1 {
+  margin: 0 10px; /* Adiciona margem de 10px nas laterais do título */
+}
+
+nav {
+  clear: both;
+  margin-top: 5px;
+  text-align: center; /* Centraliza o texto dentro do elemento <nav> */
+  background-color: #000; /* Cor de fundo do menu */
+}
+
+nav ul {
+  display: inline-block; /* Define o elemento <ul> como um bloco inline */
+}
+
+nav ul li {
+  display: inline; /* Define os itens da lista como inline para que fiquem lado a lado */
+  margin-right: 50px;
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove a margem à direita do último item da lista para evitar espaçamento extra */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 80px;
+  // text-align: center; /* Centraliza o texto dentro do conteúdo principal */
+}
+
+footer {
+  background-color: #062f63;
+  color: #fff;
+  padding: 0px 0px;
+  text-align: center; /* Centraliza o texto dentro do rodapé */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+//repsonsivity
+
+/* Estilos para telas maiores que 768px (tamanho de tablet e desktop) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px; /* Ajuste o tamanho da fonte para telas maiores */
+  }
+}
+
+/* Estilos para telas menores que 768px (tamanho de tablet e celular) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px; /* Reduza o preenchimento do cabeçalho */
+  }
+
+  nav ul li {
+    display: block; /* Altere a exibição para blocos para empilhar os itens de navegação */
+    margin-bottom: 10px; /* Adicione um espaçamento inferior entre os itens de navegação */
+  }
+
+  main {
+    padding: 10px; /* Reduza o preenchimento do conteúdo principal */
+  }
+
+  footer {
+    padding: 5px 10px; /* Reduza o preenchimento do rodapé */
+  }
+}
