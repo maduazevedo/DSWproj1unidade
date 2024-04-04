@@ -2,14 +2,21 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
 }
 
+.cor{
+  background-color: #2288b4;
+}
 header {
-  background-color: #216ed1;
+  background-color: #000000;
   color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
-  // text-align: center; /* Centraliza o texto dentro do cabeçalho */
+  text-align: center; /* Centraliza o texto dentro do cabeçalho */
+}
+
+.borda{
+  border: 1px solid white;
 }
 .site {
   background-color: white;
@@ -20,16 +27,16 @@ header {
 }
 
 .logo-wrapper {
-  display: flex;
+  display: flexbox;
   align-items: center;
 }
 
 .logo-topo {
-  width: 75px;
+  width: 400px;
   height: auto;
-  margin-right: 10px; /* Adiciona margem à direita da logo */
+  margin-right: 90px; /* Adiciona margem à direita da logo */
   margin-left: 10px; /* Adiciona margem à direita da logo */
-  margin-top: 10px; /* Adiciona margem ao topo da logo */
+  margin-top: 25px; /* Adiciona margem ao topo da logo */
 }
 
 h1 {
@@ -53,7 +60,7 @@ nav ul li {
 }
 
 nav ul li:last-child {
-  margin-right: 0; /* Remove a margem à direita do último item da lista para evitar espaçamento extra */
+  margin-right:11px; /* Remove a margem à direita do último item da lista para evitar espaçamento extra */
 }
 
 nav ul li a {
