@@ -42,13 +42,12 @@ body::after {
 
 
 .cor{
-  background-color: #2288b4;
+  background-color: #457B9D;
 }
 
 
 header {
-  background-color: #2288;
-  background-color: #000000;
+  background-color: #1D3557;
   color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
   text-align: center; /* Centraliza o texto dentro do cabeçalho */
@@ -57,10 +56,12 @@ header {
 
 .site {
   background-color: white;
-  margin-left: 20%;
+  margin-top: 50px;
+  margin-left: 5%;
   margin-right: 20%;
   padding: 10px;
   padding-left: 25px;
+  
 }
 
 .logo-wrapper {
@@ -76,7 +77,9 @@ header {
   margin-top: 25px; /* Adiciona margem ao topo da logo */
 }
 
-h1 {
+h2 {
+  font-size: 25px;
+  
   margin: 10px; /* Adiciona margem de 10px nas laterais do título */
 }
 
@@ -84,7 +87,7 @@ nav {
   clear: both;
   margin-top: 5px;
   text-align: center; /* Centraliza o texto dentro do elemento <nav> */
-  background-color: #000; /* Cor de fundo do menu */
+  background-color: #1D3557 /* Cor de fundo do menu */
 }
 
 nav ul {
