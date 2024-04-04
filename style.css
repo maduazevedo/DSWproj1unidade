@@ -1,23 +1,60 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(255, 255, 255);
+  min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura da janela de visualização */
+  position: relative; /* Define a posição relativa para o corpo */
 }
+
+
+footer {
+  text-align: center;
+  height: 5rem;
+  display: flexbox;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  position: absolute; /* Define a posição absoluta para o rodapé */
+  bottom: 0; /* Fixa o rodapé na parte inferior */
+  width: 100%; /* Define a largura total para o rodapé */
+}
+
+
+/* Adiciona uma área com a mesma cor abaixo do footer */
+body::after {
+  display: block;
+  height: 4rem; /* A mesma altura do footer */
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: -4rem; /* Posiciona a área abaixo do footer */
+  left: 0;
+ /* Coloca a área abaixo do rodapé */
+}
+
+    main{
+      padding-bottom: 100px;
+    }
+
+
+/*DEBUG FOOTER /\ */
+
 
 .cor{
   background-color: #2288b4;
 }
+
+
 header {
+  background-color: #2288;
   background-color: #000000;
   color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
   text-align: center; /* Centraliza o texto dentro do cabeçalho */
 }
 
-.borda{
-  border: 1px solid white;
-}
+
 .site {
   background-color: white;
   margin-left: 20%;
@@ -68,23 +105,12 @@ nav ul li a {
   text-decoration: none;
 }
 
-main {
-  padding: 20px;
-  margin-bottom: 80px;
-  // text-align: center; /* Centraliza o texto dentro do conteúdo principal */
-}
 
-footer {
-  background-color: #062f63;
-  color: #fff;
-  padding: 0px 0px;
-  text-align: center; /* Centraliza o texto dentro do rodapé */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
-//repsonsivity
+
+
+
+/*repsonsivity*/
 
 /* Estilos para telas maiores que 768px (tamanho de tablet e desktop) */
 @media screen and (min-width: 768px) {
