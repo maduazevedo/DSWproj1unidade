@@ -7,10 +7,9 @@ body {
   position: relative; /* Define a posição relativa para o corpo */
 }
 
-
 footer {
-  text-align: center;
-  height: 5rem;
+  text-align: center; /* alinhamento do texto */
+  height: 5rem; /* altura */
   display: flexbox;
   align-items: center;
   background-color: #000;
@@ -20,66 +19,122 @@ footer {
   width: 100%; /* Define a largura total para o rodapé */
 }
 
-
 /* Adiciona uma área com a mesma cor abaixo do footer */
 body::after {
   display: block;
   height: 4rem; /* A mesma altura do footer */
-  width: 100%;
-  background-color: #000;
   position: absolute;
   bottom: -4rem; /* Posiciona a área abaixo do footer */
   left: 0;
- /* Coloca a área abaixo do rodapé */
+  /* Coloca a área abaixo do rodapé */
 }
 
-    main{
-      padding-bottom: 100px;
-    }
-
+main {
+  padding-bottom: 100px;
+}
 
 /*DEBUG FOOTER /\ */
 
-
-.cor{
-  background-color: #457B9D;
+.cor {
+  background-color: #457b9d; /* cor de fundo da barra de navegação */
 }
 
-
 header {
-  background-color: #1D3557;
+  background-color: #1d3557; /* cor de fundo da logo */
   color: #ffffff;
   align-items: center; /* Alinha verticalmente os itens ao centro */
   text-align: center; /* Centraliza o texto dentro do cabeçalho */
 }
 
-
 .site {
-  background-color: white;
+  background-color: rgb(255, 255, 255); /* cor da cixinha de texto */
   margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 10px;
   padding-left: 25px;
-  
 }
 
 .logo-wrapper {
-  display: flexbox;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient( 
+    to left,
+    rgba(255, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  ); /* Adiciona um gradiente ao fundo do logo-wrapper */
 }
 
+span{
+  margin: 90px;
+}
+
+.tamanho-img-home{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 300px;
+}
+
+.tamanho-img-home2{
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.img-home{
+  padding-top: 50px;
+  padding-bottom: 30px;
+  
+}
+
+
 .logo-topo {
-  width: 400px;
-  height: auto;
-  margin-right: 90px; /* Adiciona margem à direita da logo */
-  margin-left: 10px; /* Adiciona margem à direita da logo */
-  margin-top: 25px; /* Adiciona margem ao topo da logo */
+  margin-left: 25%;
+  width: 400px; /* Reduz a largura do logo */
+  margin-top: 30px; /* Adiciona margem ao topo da logo */
+  margin-bottom: 20px; /* Adiciona margem ao fundo da logo */
+}
+
+.barra-pesquisa {
+  width: 300px; /* localização dela na tela */
+}
+
+.barra-pesquisa input[type="text"] {
+  padding: 10px; /* Adiciona padding à caixa de pesquisa */
+  margin-right: 2px; /* Adiciona margem à direita para separação da barra de pesquisa para o botão*/
+  border-radius: 5px; /* Adiciona borda arredondada a barra de pesquisa */
+}
+
+.barra-pesquisa button {
+  padding: 0px; /* Adiciona padding ao botão */
+  border-radius: 5px; /* Adiciona borda arredondada ao botão */
+  background-color: #192b45; /* Define a cor de fundo padrão do botão */
+  border: none; /* Remove a borda do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a mudança de cor do botão*/
+}
+
+.botao-teste {
+  color: rgb(255, 255, 255); /* cor do texto do botão */
+  display: block;
+  padding: 10px; /* define o espaçamento entre o texto do botão e seu limite */
+  text-decoration: none; /* tira o sublinhado do botão */
+}
+
+.barra-pesquisa button:hover {
+  background-color: #2f6c8f; /* Muda a cor de fundo  do botão ao passar o mouse */
+}
+
+.logo-menu {
+  width: auto;
+  height: 15px;
+  margin-right: 0px; /* Adiciona margem à direita do ícone do menu */
+  margin-left: 0px; /* Adiciona margem à esquerda do ícone do menu */
 }
 
 h2 {
   font-size: 25px;
-  
+
   margin: 10px; /* Adiciona margem de 10px nas laterais do título */
 }
 
@@ -87,31 +142,41 @@ nav {
   clear: both;
   margin-top: 5px;
   text-align: center; /* Centraliza o texto dentro do elemento <nav> */
-  background-color: #1D3557 /* Cor de fundo do menu */
+  background-color: #1d3557; /* Cor de fundo do menu */
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
 }
 
 nav ul {
+  margin: 0px;
   display: inline-block; /* Define o elemento <ul> como um bloco inline */
 }
 
+nav ul li:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao item do menu ao passar o mouse */
+}
+
 nav ul li {
-  display: inline; /* Define os itens da lista como inline para que fiquem lado a lado */
-  margin-right: 50px;
+  display: inline-block;
+  margin-right: 50px; /* define o espaçamento entre os itens do menu */
+  transition: box-shadow 0.3s; /* Adiciona uma transição suave para a sombra */
 }
 
 nav ul li:last-child {
-  margin-right:11px; /* Remove a margem à direita do último item da lista para evitar espaçamento extra */
+  border-right: none; /* Remove a borda direita do último item */
 }
 
 nav ul li a {
-  color: #fff;
+  display: block; /* Para que a definição abaixo ocupe toda a largura do item do menu */
+  padding: 15px; /* Adiciona espaço entre o texto e a borda do item */
+  color: #ffffff; /* cor do texto do menu */
   text-decoration: none;
 }
-
-
-
-
-
 
 /*repsonsivity*/
 
